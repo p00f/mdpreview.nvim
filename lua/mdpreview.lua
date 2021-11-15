@@ -2,10 +2,7 @@ local api = vim.api
 local fun = vim.fn
 local function expand(path)
   if path then
-    path:gsub("%s+", "")
-    path:gsub("\"", "")
-    local path0 = fun.fnamemodify(fun.expand(path), ":p")
-    return path0
+    return fun.fnamemodify(fun.expand(string.gsub(string.gsub(path, "%s+", ""), "\"", "")), ":p")
   else
     return expand("%")
   end
@@ -20,7 +17,7 @@ local function preview(file)
   local row = ceil((((vim_height - height) / 2) - 1))
   local col = ceil(((vim_width - width) / 2))
   local buf = api.nvim_create_buf(false, true)
-  local win = api.nvim_open_win(buf, true, {style = "minimal", relative = "editor", width = width, height = height, row = row, col = col, border = (vim.g.mdcat_border or "rounded")})
+  local win = api.nvim_open_win(buf, true, {style = "minimal", relative = "editor", width = width, height = height, row = row, col = col, border = (vim.g.md_border or "rounded")})
   api.nvim_buf_set_option(buf, "bufhidden", "wipe")
   api.nvim_win_set_option(win, "winblend", 0)
   api.nvim_buf_set_keymap(buf, "n", "q", "<cmd>bd<CR>", {noremap = true, silent = true})

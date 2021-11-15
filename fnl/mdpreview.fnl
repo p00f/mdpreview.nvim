@@ -3,11 +3,11 @@
 
 (fn expand [path]
  (if path
-  (do
-   (path:gsub "%s+" "")
-   (path:gsub "\"" "")
-   (let [path (fun.fnamemodify (fun.expand path) ":p")]
-    path))
+  (-> path
+     (string.gsub "%s+" "")
+     (string.gsub "\"" "")
+     (fun.expand)
+     (fun.fnamemodify ":p"))
   (expand "%")))
 
 (fn preview [file]
