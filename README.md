@@ -1,10 +1,10 @@
 # mdpreview.nvim
 
-Show markdown previews in a floating window using _any previewer of your choice_.
+Show markdown previews in a floating window using _any terminal previewer of your choice_.
 
 ## Requirements
 
-A markdown previewer like [mdcat](https://github.com/lunaryorn/mdcat), [mdr](https://github.com/MichaelMure/mdr), [glow](https://github.com/charmbracelet/glow) or [bat](https://github/sharkdp/bat).
+A terminal markdown previewer like [mdcat](https://github.com/lunaryorn/mdcat), [mdr](https://github.com/MichaelMure/mdr), [glow](https://github.com/charmbracelet/glow) or [bat](https://github/sharkdp/bat).
 
 ## Globals
 
