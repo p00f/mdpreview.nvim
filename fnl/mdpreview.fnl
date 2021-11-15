@@ -33,8 +33,9 @@
                                                     :silent true})
   (api.nvim_buf_set_keymap buf :n :<ESC> "<cmd>bd<CR>" {:noremap true
                                                         :silent true})
-  (fun.termopen (string.format "env TERM=%s %s %s" (or vim.g.md_term vim.env.TERM)
-                                                   (or vim.g.md_previewer :mdcat)
-                                                   (fun.shellescape file)))))
+  (fun.termopen (string.format "env TERM=%s %s %s"
+                               (or vim.g.md_term vim.env.TERM)
+                               (or vim.g.md_previewer :mdcat)
+                               (fun.shellescape file)))))
 
 {:preview preview}
