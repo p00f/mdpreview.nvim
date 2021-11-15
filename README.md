@@ -22,6 +22,7 @@ Preview any file:
 ```vim
 :Mdpreview foo/bar.md
 ```
+If the previewer pages output you can go to insert mode inside the floating window to scroll.
 
 ## Credits
 https://github.com/ellisonleao/glow.nvim
