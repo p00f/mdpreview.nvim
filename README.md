@@ -1,6 +1,6 @@
 # mdpreview.nvim
 
-Show markdown previews in a floating window.
+Show markdown previews in a floating window using _any previewer of your choice_.
 
 ## Requirements
 
