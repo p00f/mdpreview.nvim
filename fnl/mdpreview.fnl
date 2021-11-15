@@ -26,7 +26,7 @@
                                         :height height
                                         :row row
                                         :col col
-                                        :border (or vim.g.mdcat_border :rounded)})]
+                                        :border (or vim.g.md_border :rounded)})]
   (api.nvim_buf_set_option buf :bufhidden :wipe)
   (api.nvim_win_set_option win :winblend 0)
   (api.nvim_buf_set_keymap buf :n :q "<cmd>bd<CR>" {:noremap true
