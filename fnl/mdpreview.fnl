@@ -15,9 +15,9 @@
        ceil math.ceil
        vim_width (api.nvim_get_option :columns)
        vim_height (api.nvim_get_option :lines)
-       height (ceil (- (* 0.8 vim_height) 4))
+       height (-> 0.8 (* vim_height) (- 4) (ceil))
        width (ceil (* 0.8 vim_width))
-       row (ceil (- (/ (- vim_height height) 2) 1))
+       row (-> vim_height (- height) (/ 2) (- 1) (ceil))
        col (ceil (/ (- vim_width width) 2))
        buf (api.nvim_create_buf false true)
        win (api.nvim_open_win buf true {:style :minimal
