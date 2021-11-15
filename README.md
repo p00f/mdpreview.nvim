@@ -9,7 +9,7 @@ A markdown previewer like [mdcat](https://github.com/lunaryorn/mdcat), [mdr](htt
 ## Globals
 
  - `g:md_previewer`: Previewer to use, must be executable. Default: `mdcat`
- - `g:md_term`: `$TERM` passed to the previewer. Default: `vim.env.TERM`
+ - `g:md_term`: `$TERM` passed to the previewer. Default: `:echo $TERM`.
  - `g:md_border`: Border to be used for the floating window. Default: `rounded`, possible values: `:h nvim_open_win()`
 
 ## Usage
