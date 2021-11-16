@@ -12,7 +12,7 @@ local function preview(file)
   local ceil = math.ceil
   local vim_width = api.nvim_get_option("columns")
   local vim_height = api.nvim_get_option("lines")
-  local height = ceil(((0.8 * vim_height) - 4))
+  local height = ceil(((vim_height * 0.8) - 4))
   local width = ceil((0.8 * vim_width))
   local row = ceil((((vim_height - height) / 2) - 1))
   local col = ceil(((vim_width - width) / 2))
