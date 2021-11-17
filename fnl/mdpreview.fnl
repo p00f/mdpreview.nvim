@@ -38,4 +38,4 @@
                                (or vim.g.md_previewer :mdcat)
                                (fun.shellescape file)))))
 
-{:preview preview}
+{: preview}
