@@ -4,7 +4,7 @@ Show markdown previews in a floating window using _any terminal previewer of you
 
 ## Requirements
 
-A terminal markdown previewer like [mdcat](https://github.com/lunaryorn/mdcat), [mdr](https://github.com/MichaelMure/mdr), [glow](https://github.com/charmbracelet/glow) or [bat](https://github/sharkdp/bat).
+A terminal markdown previewer like [mdcat](https://github.com/lunaryorn/mdcat), [mdr](https://github.com/MichaelMure/mdr), [glow](https://github.com/charmbracelet/glow) or [bat](https://github/sharkdp/bat) (or [cat](https://en.wikipedia.org/wiki/Cat_(Unix)) even).
 
 ## Globals
 
